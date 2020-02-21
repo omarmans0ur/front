@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+img {
+  width: 100px;
+  height: 100px;
+  animation-name: ball;
+  animation-duration: 2s;
+  animation-iteration-count:infinite;
+  position: relative;
+}
+div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: gray;
+    position: relative;
+    top: 180px;
+    left: 210px;
+    transform: matrix3d(1,0,0.00,0,0.00,-0.16,0.99,0,0,-0.99,-0.16,0,0,0,0,1);
+    animation-name: shadow;
+  animation-duration: 2s;
+  animation-iteration-count:infinite;
+    
+}
+@keyframes ball {
+  0%   { left:200px; top:100px;}
+  50%  { left:200px; top:200px;}
+  100% { left:200px; top:100px;}
+}
+@keyframes shadow {
+  0%   { width:50px ;}
+  50%  { width:100px ;}
+  100% { width:50px ;}
+}
+    </style>
+
+</head>
+<body>
+    <img src="bouncing ball.png" alt="ball">
+
+    <div>
+
+    </div>
+</body>
+</html>
